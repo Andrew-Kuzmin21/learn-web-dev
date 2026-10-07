@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Выбор даты и времени</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <!--
@@ -19,8 +23,251 @@
     -->
 
     <div class="page">
-      <!-- Начните отсюда. Разметьте шапку, основную область
-           с календарём и слотами, подвал. -->
+      <header class="header">
+        <a href="#" class="header__logo">
+          <img class="header__logo__img" src="./img/logo.png" alt="logo">
+        </a>
+
+        <nav class="header__nav">
+          <a href="#" class="header__nav__link">Услуги</a>
+          <a href="#" class="header__nav__link">Галерея</a>
+          <a href="#" class="header__nav__link">Команда</a>
+          <a href="#" class="header__nav__link">Отзывы</a>
+          <a href="#" class="header__nav__link">Контакты</a>
+        </nav>
+      </header>
+
+
+      <main>
+        <ul class="steps">
+          <li class="steps__step">
+            <p class="steps__step__circle">1</p>
+
+            <div class="steps__step__content">
+              <div class="steps__step__content__lines">
+                <div class="steps__step__content__lines__right"></div>
+                <div class="steps__step__content__lines__left"></div>
+              </div>
+
+              <p class="steps__step__content__text">
+                Выбор мастера
+              </p>
+            </div>
+          </li>
+
+          <li class="steps__step">
+            <p class="steps__step__circle">2</p>
+
+            <div class="steps__step__content">
+              <div class="steps__step__content__lines">
+                <div class="steps__step__content__lines__right"></div>
+                <div class="steps__step__content__lines__left"></div>
+              </div>
+
+              <p class="steps__step__content__text">
+                Выбор услуг
+              </p>
+            </div>
+          </li>
+
+          <li class="steps__step">
+            <p class="steps__step__circle steps__step__circle_active">3</p>
+
+            <div class="steps__step__content">
+              <div class="steps__step__content__lines">
+                <div class="steps__step__content__lines__right"></div>
+                <div class="steps__step__content__lines__left"></div>
+              </div>
+
+              <p class="steps__step__content__text">
+                Выбор даты
+              </p>
+            </div>
+          </li>
+
+          <li class="steps__step">
+            <p class="steps__step__circle steps__step__circle_disable">4</p>
+
+            <div class="steps__step__content">
+              <div class="steps__step__content__lines">
+                <div class="steps__step__content__lines__right steps__step__content__lines__right_disable"></div>
+                <div class="steps__step__content__lines__left"></div>
+              </div>
+
+              <p class="steps__step__content__text steps__step__content__text_disable">
+                Добавить контакты
+              </p>
+            </div>
+          </li>
+
+          <li class="steps__step">
+            <p class="steps__step__circle steps__step__circle_disable">5</p>
+
+            <div class="steps__step__content">
+              <div class="steps__step__content__lines">
+                <div class="steps__step__content__lines__right steps__step__content__lines__right_disable"></div>
+                <div class="steps__step__content__lines__left"></div>
+              </div>
+
+              <p class="steps__step__content__text steps__step__content__text_disable">
+                Подтверждение
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <section class="main">
+          <h1>Выберите дату и время</h1>
+
+          <div class="main__content">
+            <div class="main__content__block">
+              <div class="main__date__header">
+                <h3 class="main__date__header__title">Июнь 2026</h3>
+
+                <div class="main__date__header__buttons">
+                  <div class="main__date__header__buttons__button">
+                    <img class="main__date__header__buttons__button__img" src="./img/prev.png" alt="">
+                  </div>
+                  <div class="main__date__header__buttons__button">
+                    <img class="main__date__header__buttons__button__img" src="./img/next.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__date__grid">
+                <!-- Дни недели -->
+                <div class="main__date__grid__name">Пн</div><div class="main__date__grid__name">Вт</div><div class="main__date__grid__name">Ср</div>
+                <div class="main__date__grid__name">Чт</div><div class="main__date__grid__name">Пт</div><div class="main__date__grid__name">Сб</div><div class="main__date__grid__name">Вс</div>
+
+                <!-- Дни месяца -->
+                <!-- Первая линия -->
+                <div class="main__date__grid__day main__date__grid__day_start_thu">1</div>
+
+                <!-- Вторая линия -->
+                <div class="main__date__grid__day main__date__grid__day_disable">2</div>
+                <div class="main__date__grid__day">3</div>
+                <div class="main__date__grid__day">4</div>
+                <div class="main__date__grid__day">5</div>
+                <div class="main__date__grid__day">6</div>
+                <div class="main__date__grid__day">7</div>
+                <div class="main__date__grid__day">8</div>
+                
+                <!-- Третья линия -->
+                <div class="main__date__grid__day">9</div>
+                <div class="main__date__grid__day">10</div>
+                <div class="main__date__grid__day">11</div>
+                <div class="main__date__grid__day">12</div>
+                <div class="main__date__grid__day main__date__grid__day_selected">13</div>
+                <div class="main__date__grid__day">14</div>
+                <div class="main__date__grid__day">15</div>
+
+                <!-- Четвертая линия -->
+                <div class="main__date__grid__day">16</div>
+                <div class="main__date__grid__day">17</div>
+                <div class="main__date__grid__day">18</div>
+                <div class="main__date__grid__day">19</div>
+                <div class="main__date__grid__day">20</div>
+                <div class="main__date__grid__day">21</div>
+                <div class="main__date__grid__day">22</div>
+
+                <!-- Пятая линия -->
+                <div class="main__date__grid__day">23</div>
+                <div class="main__date__grid__day">24</div>
+                <div class="main__date__grid__day">25</div>
+                <div class="main__date__grid__day">26</div>
+                <div class="main__date__grid__day">27</div>
+                <div class="main__date__grid__day">28</div>
+                <div class="main__date__grid__day">29</div>
+
+                <!-- Шестая линия -->
+                <div class="main__date__grid__day">30</div>
+                <div class="main__date__grid__day">31</div>
+                
+              </div>
+            </div>
+
+            <div class="main__content__block">
+              <h3 class="main__time__title">Доступное время</h3>
+
+              <div class="main__time__grid">
+                <!-- Первая линия -->
+                <div class="main__time__grid__cell main__time__grid__cell_disable">10:00 <span class="main__time__grid__cell__span main__time__grid__cell__span_disable">Занято</span></div>
+                <div class="main__time__grid__cell main__time__grid__cell_disable">11:00 <span class="main__time__grid__cell__span main__time__grid__cell__span_disable">Занято</span></div>
+
+                <!-- Вторая линия -->
+                <div class="main__time__grid__cell">12:00</div>
+                <div class="main__time__grid__cell main__time__grid__cell_disable">13:00 <span class="main__time__grid__cell__span main__time__grid__cell__span_disable">Занято</span></div>
+                
+                <!-- Третья линия -->
+                <div class="main__time__grid__cell">14:00</div>
+                <div class="main__time__grid__cell main__time__grid__cell_disable">15:00 <span class="main__time__grid__cell__span main__time__grid__cell__span_disable">Занято</span></div>
+
+                <!-- Четвертая линия -->
+                <div class="main__time__grid__cell main__date__grid__cell_selected">16:00</div>
+                <div class="main__time__grid__cell">17:00</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__next">
+            <h3 class="main__next__title">13 Июня 16:00</h3>
+
+            <div class="main__next__button">Далее</div>
+          </div>
+
+          <div class="main__back">
+            <div class="main__back__button">Назад</div>
+          </div>
+        </section>
+      </main>
+
+      
+      <footer>
+        <div class="footer__main">
+          <div class="footer__main__content">
+            <div class="footer__main__content__col">
+              <a href="#" class="footer__main__content__col__logo">
+                <img class="footer__main__content__col__logo__img" src="./img/logo.png" alt="logo">
+              </a>
+
+              <p class="footer__main__content__col__text">
+                Подберём стрижку и уход, которые подойдут именно вам. 
+                Расслабляйтесь, общайтесь и наслаждайтесь результатом!
+              </p>
+            </div>
+
+            <div class="footer__main__content__col">
+              <h5 class="footer__main__content__col__title">КОНТАКТЫ</h5>
+
+              <div class="footer__main__content__col__contact">
+                <img class="footer__main__content__col__contact__img" src="./img/map-pin.png" alt="">
+
+                <p class="footer__main__content__col__contact__text">ул. Садовая, 15, Москва</p>
+              </div>
+
+              <div class="footer__main__content__col__contact">
+                <img class="footer__main__content__col__contact__img" src="./img/phone.png" alt="">
+
+                <p class="footer__main__content__col__contact__phone">+7 (495) 123-45-67</p>
+              </div>
+            </div>
+
+            <div class="footer__main__content__col">
+                <h5 class="footer__main__content__col__title">РЕЖИМ РАБОТЫ</h5>
+
+                <div class="footer__main__content__col__text">
+                  <p class="footer__main__content__col__text__days">Пн–Пт: 9:00 – 21:00</p>
+                  <p class="footer__main__content__col__text__days">Сб–Вс: 10:00 – 19:00</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="footer__main__bottom">
+            <p class="footer__main__bottom__text">© 2026. Все права защищены.</p>
+            <a class="footer__main__bottom__text footer__main__bottom__text__line" href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
